@@ -10,7 +10,7 @@ Long Description about project. This project do that. This project is awesome...
 ## Team Id
 Team id here
 ## Link to product walkthrough
-[link to video]
+[https://drive.google.com/file/d/10zLYnkgNKqr8X2numJ0VoUG0b69M_ccp/view?usp=share_link]
 ## How it Works ?
 1. Team M demonstartes a small-simple E-Learning platform that is specially designed for childrens under HighSchool to improve and choose their way of Path with userFriendly Interface that can be used for easy understanding,
 
@@ -29,6 +29,8 @@ Also the teachers are requersted to update their course every 20+ student partic
 
 
 2. Embed video of project demo
+https://drive.google.com/file/d/10zLYnkgNKqr8X2numJ0VoUG0b69M_ccp/view?usp=share_link
+
 ## Libraries used
 express : 4.16.1
 mongoose : 7.0.0
