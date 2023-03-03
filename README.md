@@ -12,11 +12,30 @@ Team id here
 ## Link to product walkthrough
 [link to video]
 ## How it Works ?
-1. Explaining the working of project
+1. Team M demonstartes a small-simple E-Learning platform that is specially designed for childrens under HighSchool to improve and choose their way of Path with userFriendly Interface that can be used for easy understanding,
+
+Intrested to know how it works?
+	Two login interfaces are provoded for 'Teachers' & 'Stduents'
+where in Student's interface is displayed are available course contents and gamified in a way that students are rewarded in a way that challenges are succeeded & also it keeps track on Students choicde of selection
+
+On teacher's inerface is provided is What all courses can 'this' teacher provide to the students and kept in track that what courses are most likey and viewed to an advantage of students globally, It keeps a track of teachers chocies
+
+whats new?
+Students interface is merged with teacher's feedBack form where stdudents have to give a 30+ words keywords feedback to the teacher to help him/her keep track on their course, the feedBack form pay's a visit after every completion of a course
+
+
+Also the teachers are requersted to update their course every 20+ student participation of their course and should keep track on the pricing of each course
+
+
+
 2. Embed video of project demo
 ## Libraries used
-Library Name - Version
+express : 4.16.1
+mongoose : 7.0.0
+nodemon : 2.0.20
+
 ## How to configure
-Instructions for setting up project
+npm install
+setup .env file with variable name MONGO_URI having value of a link to connect it to mongodbatlas
 ## How to Run
-Instructions for running
+npm start
