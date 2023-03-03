@@ -1,0 +1,118 @@
+<head>
+	<title>E-Learning Platform - Home</title>
+	<style>
+		body {
+			background-color: #e6e6fa; /* Lavender */
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			background-color: #4b0082; /* Indigo */
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+		}
+		nav h1 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: normal;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 5px 10px;
+			border-radius: 5px;
+			transition: background-color 0.2s ease-in-out;
+		}
+		nav a:hover {
+			background-color: #fff;
+			color: #4b0082; /* Indigo */
+			transition: background-color 0.2s ease-in-out;
+		}
+		h2 {
+			color: #4b0082; /* Indigo */
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+		.card {
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #888888;
+			border-radius: 10px;
+			margin: 20px;
+			max-width: 300px;
+			padding: 20px;
+			text-align: center;
+		}
+		.card img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		.card h3 {
+			font-size: 20px;
+			margin: 0;
+			color: #4b0082; /* Indigo */
+		}
+		.card p {
+			font-size: 16px;
+			color: #666;
+			margin-bottom: 10px;
+		}
+		.card a {
+			background-color: #4b0082; /* Indigo */
+			color: #fff;
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 0.2s ease-in-out;
+		}
+		.card a:hover {
+			background-color: #fff;
+			color: #4b0082; /* Indigo */
+			transition: background-color 0.2s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<h1>E-Learning Platform</h1>
+		<a href="#">Home</a>
+		<p>Welcome, John Doe!</p>
+	</nav>
+    
+	<h2>Available Courses</h2>
+	{{#each course}}
+	<div class="container">
+		<div class="card">
+			<img src="https://via.placeholder.com/300x200">
+			<h3>{{this.name}}</h3>
+			<p>{{this.description}}</p>
+         </div>
+    </div>
+	{{/each}}
+	<div style="width: 600px; height: 550px;" id="wt-container"></div>
+
+    <script src="https://www.whiteboard.team/dist/api.js"></script>
+    <script type="text/javascript">
+        var wt = new api.WhiteboardTeam('#wt-container', {
+            clientId: 'ed80f900a41b704d46f6b07e360ebebb',
+            boardCode: '45d4d58d72df6fg'
+        });
+    </script>
+            </body>

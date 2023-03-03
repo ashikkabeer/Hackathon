@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Course</title>
+    <style>
+      body {
+        background-color: #8A2BE2; /* Set the background color to a dark purple */
+        color: #fff; /* Set the text color to white */
+        font-family: Arial, sans-serif; /* Set the font family */
+      }
+
+      h1 {
+        color: #fff; /* Set the text color to white */
+        text-align: center; /* Center the text */
+      }
+
+      form {
+        max-width: 500px; /* Limit the width of the form */
+        margin: 0 auto; /* Center the form horizontally */
+      }
+
+      label {
+        display: block; /* Put each label on a new line */
+        font-size: 20px; /* Increase the font size */
+        margin-bottom: 10px; /* Add some spacing between the labels */
+      }
+
+      input[type="text"],
+      textarea,
+      input[type="url"],
+      input[type="file"] {
+        display: block; /* Put each input on a new line */
+        width: 100%; /* Set the width to 100% */
+        padding: 10px; /* Add some padding */
+        border: none; /* Remove the border */
+        border-radius: 5px; /* Add some border radius */
+        margin-bottom: 20px; /* Add some spacing between the inputs */
+        font-size: 18px; /* Set the font size */
+        background-color: #fff; /* Set the background color to white */
+      }
+
+      input[type="submit"] {
+        display: block; /* Put the submit button on a new line */
+        width: 100%; /* Set the width to 100% */
+        padding: 10px; /* Add some padding */
+        border: none; /* Remove the border */
+        border-radius: 5px; /* Add some border radius */
+        background-color: #FF69B4; /* Set the background color to a light pink */
+        color: #fff; /* Set the text color to white */
+        font-size: 18px; /* Set the font size */
+        cursor: pointer; /* Add a cursor pointer */
+      }
+
+      input[type="submit"]:hover {
+        background-color: #FF1493; /* Change the background color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Course</h1>
+    <form action="/add-course" method="post" enctype="multipart/form-data">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+      <br>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      <br>
+      <label for="link">Link:</label>
+      <input type="url" id="link" name="link" required>
+      <br>
+      <input type="submit" value="Add Product">
+    </form>
+  </body>
+</html>

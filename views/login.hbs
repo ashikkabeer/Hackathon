@@ -1,0 +1,71 @@
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: #e6e6fa; /* Lavender */
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: #4b0082; /* Indigo */
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #888888;
+			margin-top: 50px;
+			width: 500px;
+			margin: auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #4b0082; /* Indigo */
+			font-size: 18px;
+			font-weight: bold;
+		}
+		input[type="email"],
+		input[type="password"] {
+			padding: 8px;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			font-size: 16px;
+			background-color: #f5f5f5;
+		}
+		input[type="submit"] {
+			background-color: #4b0082; /* Indigo */
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+		}
+		.forgot-password {
+			color: #4b0082; /* Indigo */
+			text-decoration: none;
+			font-size: 16px;
+			margin-top: 10px;
+			display: block;
+			text-align: right;
+		}
+		.forgot-password:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>CodingGene</h1>
+	<form>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<input type="submit" value="Login">
+		<a href="#" class="forgot-password">Forgot Password?</a>
+	</form>
+</body>
